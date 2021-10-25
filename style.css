@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgColor:#fff;
+    --darkMode:black;
+
+    /* --bgColor:black;
+    --darkMode:#fff; */
+}
+.dark-theme{
+    --bgColor:black;
+    --darkMode:#fff;
+}
+body{
+    overflow: hidden;
+    background-color: var(--bgColor);
+}
+.navigation{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 10px;
+}
+.navigation .left{
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 25px;
+    color: var(--darkMode);
+}
+.navigation .right ul{
+    display: flex;
+    padding: 20px 20px;
+}
+.navigation .right ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.navigation .right ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: var(--darkMode);
+}
+.navigation .right ul li a:hover{
+    /* color: white; */
+}
+.btn1{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn1 img{
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+}
+.container{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right__container img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px blueviolet;
+}
+.right__container img:hover{
+    transform: rotate(10deg);
+    transition: 0.5s  ease-out;
+}
+@media only screen and (max-width:768px) {
+    .left__container,.container{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-top: 20px;
+    }
+    .right__container{
+        margin-top:20px;
+    }
+}
+.btn2{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: var(--darkMode);
+    border: 1px solid blanchedalmond;  
+}
+.btn2 a{
+    text-decoration: none;
+    color: blueviolet;
+}
+span{
+    color: orangered;
+}
+.container .left__container{
+    color: var(--darkMode);
+}
+.container .left__container p{
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--darkMode);
+}
